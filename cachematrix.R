@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-        
+         
         inverse <- NULL
         
         set <- function(y) {
@@ -46,5 +46,23 @@ cacheSolve <- function(x, ...) {
 ##      [,1] [,2]
 ## [1,]    1    3
 ## [2,]    2    4
-
-
+## 
+## > cacheSolve(myMatrix)
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+##
+## Check.
+## Matrix(A)
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+##
+## Inverse Matrix(A)
+##                        [,1] [,2]
+## (1 / (4 - 6)) *  [1,]    4   -3
+##                  [2,]   -2    1
+##
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
