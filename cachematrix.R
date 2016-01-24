@@ -25,3 +25,13 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 }
+
+## Test Case.
+##
+## > source("cachematrix.R")
+## > myMatrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+## > myMatrix$get()
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+
